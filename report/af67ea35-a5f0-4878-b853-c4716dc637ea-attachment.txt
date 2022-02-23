@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test01.py:26 正在执行调用执行数据：{'path': '/api/getuserinfo', 'method': 'get', 'headers': {'token': '23657DGYUSGD126731638712GE18271H'}, 'param_type': 'data', 'params': None, 'expect': {'data': [{'nikename': '风清扬', 'openid': 'UEHUXUXU78272SDSassDD', 'userbalance': 5678.9, 'userid': 17890, 'username': 'admin', 'userpoints': 4321}], 'httpstatus': 200}, 'x_y': [4, 11]}
+[32mINFO    [0m root:api.py:48 正在调用运行接口方法
+[32mINFO    [0m root:api.py:24 正在调用 get请求方法
+[32mINFO    [0m root:common_assert.py:7 正在调用断言公共方法

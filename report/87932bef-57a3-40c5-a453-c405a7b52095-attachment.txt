@@ -1,0 +1,4 @@
+INFO     root:test01.py:26 正在执行调用执行数据：{'path': '/api/getproductinfo?productid=8888', 'method': 'get', 'headers': None, 'param_type': 'data', 'params': None, 'expect': {'data': [{'SKU': 'FRTSJ7676', 'price': 29.9, 'productdesc': '麒麟瓜皮薄瓜瓤嫩,就连翠衣也很清甜,瓤虽是粉红而不是深红,但甜度丝毫不减。', 'productid': 8888, 'productname': '海南麒麟瓜5斤装'}], 'httpstatus': 200}, 'x_y': [8, 11]}
+INFO     root:api.py:45 正在调用运行接口方法
+INFO     root:api.py:21 正在调用 get请求方法
+INFO     root:common_assert.py:7 正在调用断言公共方法

@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test01.py:26 正在执行调用执行数据：{'path': '/api/login', 'method': 'post', 'headers': {'content-type': 'application/json'}, 'param_type': 'json', 'params': {'username': 'admin', 'password': '123456'}, 'expect': {'adress': {'city': 'changsha'}, 'httpstatus': 200, 'info': {'age': 18, 'name': 'admin'}, 'msg': 'success', 'token': '23657DGYUSGD126731638712GE18271H'}, 'x_y': [7, 11]}
+[32mINFO    [0m root:api.py:45 正在调用运行接口方法
+[32mINFO    [0m root:api.py:26 正在调用 post请求方法
+[32mINFO    [0m root:common_assert.py:7 正在调用断言公共方法

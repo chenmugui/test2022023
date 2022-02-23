@@ -1,0 +1,4 @@
+INFO     root:test01.py:26 正在执行调用执行数据：{'path': '/api/addcart', 'method': 'post', 'headers': {'token': '23657DGYUSGD126731638712GE18271H', 'content-type': 'application/json'}, 'param_type': 'json', 'params': {'userid': 17890, 'openid': 'UEHUXUXU78272SDSassDD', 'productid': 8888}, 'expect': {'data': [{'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'price': 29.9, 'productid': 8888, 'userid': 17890}], 'httpstatus': 200, 'result': 'success'}, 'x_y': [10, 11]}
+INFO     root:api.py:45 正在调用运行接口方法
+INFO     root:api.py:26 正在调用 post请求方法
+INFO     root:common_assert.py:7 正在调用断言公共方法

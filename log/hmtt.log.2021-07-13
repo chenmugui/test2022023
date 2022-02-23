@@ -1,0 +1,120 @@
+2021-07-13 15:32:58,242 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/login', 'method': 'post', 'headers': {'content-type': 'application/json'}, 'param_type': 'json', 'params': {'username': 'admin', 'password': '123456'}, 'expect': {'adress': {'city': 'changsha'}, 'httpstatus': 200, 'info': {'age': 18, 'name': 'admin'}, 'msg': 'success', 'token': '23657DGYUSGD126731638712GE18271H'}, 'x_y': [2, 11]}
+2021-07-13 15:32:58,243 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:32:58,244 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 15:32:58,356 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:32:58,415 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/getproductinfo?productid=8888', 'method': 'get', 'headers': None, 'param_type': 'data', 'params': None, 'expect': {'data': [{'SKU': 'FRTSJ7676', 'price': 29.9, 'productdesc': '麒麟瓜皮薄瓜瓤嫩,就连翠衣也很清甜,瓤虽是粉红而不是深红,但甜度丝毫不减。', 'productid': 8888, 'productname': '海南麒麟瓜5斤装'}], 'httpstatus': 200}, 'x_y': [3, 11]}
+2021-07-13 15:32:58,416 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:32:58,416 INFO [api.py(_get:21)] - 正在调用 get请求方法
+2021-07-13 15:32:58,517 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:32:58,604 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/getuserinfo', 'method': 'get', 'headers': {'token': '23657DGYUSGD126731638712GE18271H'}, 'param_type': 'data', 'params': None, 'expect': {'data': [{'nikename': '风清扬', 'openid': 'UEHUXUXU78272SDSassDD', 'userbalance': 5678.9, 'userid': 17890, 'username': 'admin', 'userpoints': 4321}], 'httpstatus': 201}, 'x_y': [4, 11]}
+2021-07-13 15:32:58,604 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:32:58,604 INFO [api.py(_get:21)] - 正在调用 get请求方法
+2021-07-13 15:32:58,701 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:32:58,735 ERROR [test01.py(test01:39)] - 错误，原因：错误！响应 code：200 预期 code：201
+2021-07-13 15:32:58,802 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/addcart', 'method': 'post', 'headers': {'token': '23657DGYUSGD126731638712GE18271H', 'content-type': 'application/json'}, 'param_type': 'json', 'params': {'userid': 17890, 'openid': 'UEHUXUXU78272SDSassDD', 'productid': 8888}, 'expect': {'data': [{'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'price': 29.9, 'productid': 8888, 'userid': 17890}], 'httpstatus': 200, 'result': 'success'}, 'x_y': [5, 11]}
+2021-07-13 15:32:58,802 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:32:58,802 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 15:32:58,893 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:32:58,948 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/createorder', 'method': 'post', 'headers': {'token': '23657DGYUSGD126731638712GE18271H', 'content-type': 'application/json'}, 'param_type': 'json', 'params': {'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'productid': 8888, 'userid': 17890}, 'expect': {'data': [{'openid': 'UEHUXUXU78272SDSassDD', 'orderid': 23441289, 'orderprice': 129.9, 'productid': 8888, 'productnum': 1, 'userid': 17890}], 'httpstatus': 201, 'result': 'success'}, 'x_y': [6, 11]}
+2021-07-13 15:32:58,948 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:32:58,949 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 15:32:59,047 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:32:59,094 ERROR [test01.py(test01:39)] - 错误，原因：错误！响应 code：200 预期 code：201
+2021-07-13 15:37:38,664 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/login', 'method': 'post', 'headers': {'content-type': 'application/json'}, 'param_type': 'json', 'params': {'username': 'admin', 'password': '123456'}, 'expect': {'adress': {'city': 'changsha'}, 'httpstatus': 200, 'info': {'age': 18, 'name': 'admin'}, 'msg': 'success', 'token': '23657DGYUSGD126731638712GE18271H'}, 'x_y': [2, 11]}
+2021-07-13 15:37:38,664 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:37:38,664 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 15:37:38,757 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:37:38,804 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/getproductinfo?productid=8888', 'method': 'get', 'headers': None, 'param_type': 'data', 'params': None, 'expect': {'data': [{'SKU': 'FRTSJ7676', 'price': 29.9, 'productdesc': '麒麟瓜皮薄瓜瓤嫩,就连翠衣也很清甜,瓤虽是粉红而不是深红,但甜度丝毫不减。', 'productid': 8888, 'productname': '海南麒麟瓜5斤装'}], 'httpstatus': 200}, 'x_y': [3, 11]}
+2021-07-13 15:37:38,805 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:37:38,805 INFO [api.py(_get:21)] - 正在调用 get请求方法
+2021-07-13 15:37:38,905 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:37:38,969 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/getuserinfo', 'method': 'get', 'headers': {'token': '23657DGYUSGD126731638712GE18271H'}, 'param_type': 'data', 'params': None, 'expect': {'data': [{'nikename': '风清扬', 'openid': 'UEHUXUXU78272SDSassDD', 'userbalance': 5678.9, 'userid': 17890, 'username': 'admin', 'userpoints': 4321}], 'httpstatus': 200}, 'x_y': [4, 11]}
+2021-07-13 15:37:38,969 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:37:38,969 INFO [api.py(_get:21)] - 正在调用 get请求方法
+2021-07-13 15:37:39,066 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:37:39,138 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/addcart', 'method': 'post', 'headers': {'token': '23657DGYUSGD126731638712GE18271H', 'content-type': 'application/json'}, 'param_type': 'json', 'params': {'userid': 17890, 'openid': 'UEHUXUXU78272SDSassDD', 'productid': 8888}, 'expect': {'data': [{'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'price': 29.9, 'productid': 8888, 'userid': 17890}], 'httpstatus': 200, 'result': 'success'}, 'x_y': [5, 11]}
+2021-07-13 15:37:39,138 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:37:39,138 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 15:37:39,241 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:37:39,313 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/createorder', 'method': 'post', 'headers': {'token': '23657DGYUSGD126731638712GE18271H', 'content-type': 'application/json'}, 'param_type': 'json', 'params': {'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'productid': 8888, 'userid': 17890}, 'expect': {'data': [{'openid': 'UEHUXUXU78272SDSassDD', 'orderid': 23441289, 'orderprice': 129.9, 'productid': 8888, 'productnum': 1, 'userid': 17890}], 'httpstatus': 200, 'result': 'success'}, 'x_y': [6, 11]}
+2021-07-13 15:37:39,313 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:37:39,313 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 15:37:39,407 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:45:00,398 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/login', 'method': 'post', 'headers': {'content-type': 'application/json'}, 'param_type': 'json', 'params': {'username': 'admin', 'password': '123456'}, 'expect': {'adress': {'city': 'changsha'}, 'httpstatus': 200, 'info': {'age': 18, 'name': 'admin'}, 'msg': 'success', 'token': '23657DGYUSGD126731638712GE18271H'}, 'x_y': [2, 11]}
+2021-07-13 15:45:00,399 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:45:00,399 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 15:45:00,495 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:45:00,521 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/getproductinfo?productid=8888', 'method': 'get', 'headers': None, 'param_type': 'data', 'params': None, 'expect': {'data': [{'SKU': 'FRTSJ7676', 'price': 29.9, 'productdesc': '麒麟瓜皮薄瓜瓤嫩,就连翠衣也很清甜,瓤虽是粉红而不是深红,但甜度丝毫不减。', 'productid': 8888, 'productname': '海南麒麟瓜5斤装'}], 'httpstatus': 200}, 'x_y': [3, 11]}
+2021-07-13 15:45:00,521 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:45:00,521 INFO [api.py(_get:21)] - 正在调用 get请求方法
+2021-07-13 15:45:00,621 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:45:00,667 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/getuserinfo', 'method': 'get', 'headers': {'token': '23657DGYUSGD126731638712GE18271H'}, 'param_type': 'data', 'params': None, 'expect': {'data': [{'nikename': '风清扬', 'openid': 'UEHUXUXU78272SDSassDD', 'userbalance': 5678.9, 'userid': 17890, 'username': 'admin', 'userpoints': 4321}], 'httpstatus': 200}, 'x_y': [4, 11]}
+2021-07-13 15:45:00,667 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:45:00,667 INFO [api.py(_get:21)] - 正在调用 get请求方法
+2021-07-13 15:45:00,760 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:45:00,810 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/addcart', 'method': 'post', 'headers': {'token': '23657DGYUSGD126731638712GE18271H', 'content-type': 'application/json'}, 'param_type': 'json', 'params': {'userid': 17890, 'openid': 'UEHUXUXU78272SDSassDD', 'productid': 8888}, 'expect': {'data': [{'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'price': 29.9, 'productid': 8888, 'userid': 17890}], 'httpstatus': 200, 'result': 'success'}, 'x_y': [5, 11]}
+2021-07-13 15:45:00,810 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:45:00,810 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 15:45:00,934 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 15:45:00,973 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/createorder', 'method': 'post', 'headers': {'token': '23657DGYUSGD126731638712GE18271H', 'content-type': 'application/json'}, 'param_type': 'json', 'params': {'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'productid': 8888, 'userid': 17890}, 'expect': {'data': [{'openid': 'UEHUXUXU78272SDSassDD', 'orderid': 23441289, 'orderprice': 129.9, 'productid': 8888, 'productnum': 1, 'userid': 17890}], 'httpstatus': 200, 'result': 'success'}, 'x_y': [6, 11]}
+2021-07-13 15:45:00,973 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 15:45:00,973 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 15:45:01,070 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:05,997 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/login', 'method': 'post', 'headers': {'content-type': 'application/json'}, 'param_type': 'json', 'params': {'username': 'admin', 'password': '123456'}, 'expect': {'adress': {'city': 'changsha'}, 'httpstatus': 200, 'info': {'age': 18, 'name': 'admin'}, 'msg': 'success', 'token': '23657DGYUSGD126731638712GE18271H'}, 'x_y': [2, 11]}
+2021-07-13 16:00:06,020 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:06,020 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 16:00:06,158 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:06,218 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/getproductinfo?productid=8888', 'method': 'get', 'headers': None, 'param_type': 'data', 'params': None, 'expect': {'data': [{'SKU': 'FRTSJ7676', 'price': 29.9, 'productdesc': '麒麟瓜皮薄瓜瓤嫩,就连翠衣也很清甜,瓤虽是粉红而不是深红,但甜度丝毫不减。', 'productid': 8888, 'productname': '海南麒麟瓜5斤装'}], 'httpstatus': 200}, 'x_y': [3, 11]}
+2021-07-13 16:00:06,218 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:06,219 INFO [api.py(_get:21)] - 正在调用 get请求方法
+2021-07-13 16:00:06,381 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:06,454 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/getuserinfo', 'method': 'get', 'headers': {'token': '23657DGYUSGD126731638712GE18271H'}, 'param_type': 'data', 'params': None, 'expect': {'data': [{'nikename': '风清扬', 'openid': 'UEHUXUXU78272SDSassDD', 'userbalance': 5678.9, 'userid': 17890, 'username': 'admin', 'userpoints': 4321}], 'httpstatus': 201}, 'x_y': [4, 11]}
+2021-07-13 16:00:06,454 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:06,454 INFO [api.py(_get:21)] - 正在调用 get请求方法
+2021-07-13 16:00:06,541 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:06,581 ERROR [test01.py(test01:39)] - 错误，原因：错误！响应 code：200 预期 code：201
+2021-07-13 16:00:06,655 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/addcart', 'method': 'post', 'headers': {'token': '23657DGYUSGD126731638712GE18271H', 'content-type': 'application/json'}, 'param_type': 'json', 'params': {'userid': 17890, 'openid': 'UEHUXUXU78272SDSassDD', 'productid': 8888}, 'expect': {'data': [{'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'price': 29.9, 'productid': 8888, 'userid': 17890}], 'httpstatus': 200, 'result': 'success'}, 'x_y': [5, 11]}
+2021-07-13 16:00:06,655 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:06,655 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 16:00:06,754 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:06,834 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/createorder', 'method': 'post', 'headers': {'token': '23657DGYUSGD126731638712GE18271H', 'content-type': 'application/json'}, 'param_type': 'json', 'params': {'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'productid': 8888, 'userid': 17890}, 'expect': {'data': [{'openid': 'UEHUXUXU78272SDSassDD', 'orderid': 23441289, 'orderprice': 129.9, 'productid': 8888, 'productnum': 1, 'userid': 17890}], 'httpstatus': 201, 'result': 'success'}, 'x_y': [6, 11]}
+2021-07-13 16:00:06,834 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:06,834 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 16:00:06,942 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:06,980 ERROR [test01.py(test01:39)] - 错误，原因：错误！响应 code：200 预期 code：201
+2021-07-13 16:00:06,993 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/login', 'method': 'post', 'headers': {'content-type': 'application/json'}, 'param_type': 'json', 'params': {'username': 'admin', 'password': '123456'}, 'expect': {'adress': {'city': 'changsha'}, 'httpstatus': 200, 'info': {'age': 18, 'name': 'admin'}, 'msg': 'success', 'token': '23657DGYUSGD126731638712GE18271H'}, 'x_y': [7, 11]}
+2021-07-13 16:00:06,993 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:06,993 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 16:00:07,092 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:07,160 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/getproductinfo?productid=8888', 'method': 'get', 'headers': None, 'param_type': 'data', 'params': None, 'expect': {'data': [{'SKU': 'FRTSJ7676', 'price': 29.9, 'productdesc': '麒麟瓜皮薄瓜瓤嫩,就连翠衣也很清甜,瓤虽是粉红而不是深红,但甜度丝毫不减。', 'productid': 8888, 'productname': '海南麒麟瓜5斤装'}], 'httpstatus': 200}, 'x_y': [8, 11]}
+2021-07-13 16:00:07,160 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:07,160 INFO [api.py(_get:21)] - 正在调用 get请求方法
+2021-07-13 16:00:07,254 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:07,288 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/getuserinfo', 'method': 'get', 'headers': {'token': '23657DGYUSGD126731638712GE18271H'}, 'param_type': 'data', 'params': None, 'expect': {'data': [{'nikename': '风清扬', 'openid': 'UEHUXUXU78272SDSassDD', 'userbalance': 5678.9, 'userid': 17890, 'username': 'admin', 'userpoints': 4321}], 'httpstatus': 201}, 'x_y': [9, 11]}
+2021-07-13 16:00:07,288 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:07,289 INFO [api.py(_get:21)] - 正在调用 get请求方法
+2021-07-13 16:00:07,379 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:07,410 ERROR [test01.py(test01:39)] - 错误，原因：错误！响应 code：200 预期 code：201
+2021-07-13 16:00:07,422 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/addcart', 'method': 'post', 'headers': {'token': '23657DGYUSGD126731638712GE18271H', 'content-type': 'application/json'}, 'param_type': 'json', 'params': {'userid': 17890, 'openid': 'UEHUXUXU78272SDSassDD', 'productid': 8888}, 'expect': {'data': [{'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'price': 29.9, 'productid': 8888, 'userid': 17890}], 'httpstatus': 200, 'result': 'success'}, 'x_y': [10, 11]}
+2021-07-13 16:00:07,422 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:07,422 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 16:00:07,522 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:07,553 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/createorder', 'method': 'post', 'headers': {'token': '23657DGYUSGD126731638712GE18271H', 'content-type': 'application/json'}, 'param_type': 'json', 'params': {'cartid': 45233, 'openid': 'UEHUXUXU78272SDSassDD', 'productid': 8888, 'userid': 17890}, 'expect': {'data': [{'openid': 'UEHUXUXU78272SDSassDD', 'orderid': 23441289, 'orderprice': 129.9, 'productid': 8888, 'productnum': 1, 'userid': 17890}], 'httpstatus': 201, 'result': 'success'}, 'x_y': [11, 11]}
+2021-07-13 16:00:07,553 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:07,553 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 16:00:07,655 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:07,724 ERROR [test01.py(test01:39)] - 错误，原因：错误！响应 code：200 预期 code：201
+2021-07-13 16:00:07,733 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/login', 'method': 'post', 'headers': {'content-type': 'application/json'}, 'param_type': 'json', 'params': {'username': 'admin', 'password': '1234567'}, 'expect': {'adress': {'city': 'changsha'}, 'httpstatus': 200, 'info': {'age': 18, 'name': 'admin'}, 'msg': 'success', 'token': '23657DGYUSGD126731638712GE18271H'}, 'x_y': [12, 11]}
+2021-07-13 16:00:07,733 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:07,733 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 16:00:07,862 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:07,906 ERROR [test01.py(test01:39)] - 错误，原因：错误！响应 code：None 预期 code：200
+2021-07-13 16:00:07,915 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/login', 'method': 'post', 'headers': {'content-type': 'application/json'}, 'param_type': 'json', 'params': {'username': 'admin1', 'password': '123456'}, 'expect': {'adress': {'city': 'changsha'}, 'httpstatus': 200, 'info': {'age': 18, 'name': 'admin'}, 'msg': 'success', 'token': '23657DGYUSGD126731638712GE18271H'}, 'x_y': [13, 11]}
+2021-07-13 16:00:07,915 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:07,916 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 16:00:08,083 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法
+2021-07-13 16:00:08,128 ERROR [test01.py(test01:39)] - 错误，原因：错误！响应 code：None 预期 code：200
+2021-07-13 16:00:08,140 INFO [test01.py(test01:26)] - 正在执行调用执行数据：{'path': '/api/login', 'method': 'post', 'headers': {'content-type': 'application/json'}, 'param_type': 'json', 'params': {'username': 'admin', 'password': '123456'}, 'expect': {'adress': {'city': 'changsha'}, 'httpstatus': 200, 'info': {'age': 18, 'name': 'admin'}, 'msg': 'success', 'token': '23657DGYUSGD126731638712GE18271H'}, 'x_y': [14, 11]}
+2021-07-13 16:00:08,140 INFO [api.py(run_method:45)] - 正在调用运行接口方法
+2021-07-13 16:00:08,140 INFO [api.py(_post:26)] - 正在调用 post请求方法
+2021-07-13 16:00:08,302 INFO [common_assert.py(common_assert:7)] - 正在调用断言公共方法

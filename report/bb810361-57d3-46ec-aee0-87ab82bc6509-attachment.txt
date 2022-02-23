@@ -1,0 +1,5 @@
+INFO     root:test01.py:26 正在执行调用执行数据：{'path': '/api/getuserinfo', 'method': 'get', 'headers': {'token': '23657DGYUSGD126731638712GE18271H'}, 'param_type': 'data', 'params': None, 'expect': {'data': [{'nikename': '风清扬', 'openid': 'UEHUXUXU78272SDSassDD', 'userbalance': 5678.9, 'userid': 17890, 'username': 'admin', 'userpoints': 4321}], 'httpstatus': 201}, 'x_y': [9, 11]}
+INFO     root:api.py:45 正在调用运行接口方法
+INFO     root:api.py:21 正在调用 get请求方法
+INFO     root:common_assert.py:7 正在调用断言公共方法
+ERROR    root:test01.py:39 错误，原因：错误！响应 code：200 预期 code：201
